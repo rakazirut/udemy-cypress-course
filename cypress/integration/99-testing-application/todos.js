@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 beforeEach(() => {
-  
+
   cy
     .request('DELETE', 'localhost:3000/todos');
 
@@ -49,10 +49,11 @@ it('Marks item as completed', () => {
 });
 
 it('has one item', () => {
-
+  cy
+    .addTodo('buy milk')
   cy
     .get('.todo')
     .should('have.length', 1)
     .should('contain.text', 'buy milk');
-  
+
 });
