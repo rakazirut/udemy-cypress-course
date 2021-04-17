@@ -1,5 +1,5 @@
 beforeEach(() => {
-  
+
   cy
     .request('DELETE', 'localhost:3000/accounts');
 
@@ -12,11 +12,11 @@ it('sends a welcome email', () => {
 
   cy
     .get('[type=\'email\']')
-    .type('');
+    .type('ja1g3tgi96k.l8toypmu@mailosaur.io');
 
   cy
     .get('[type=\'password\']')
-    .type('');
+    .type('admin');
 
   cy
     .contains('Send me a welcome email')
@@ -26,5 +26,17 @@ it('sends a welcome email', () => {
   cy
     .get('.signup-button')
     .click();
-  
+
+  cy
+    .request({
+      method: 'POST',
+      url: 'https://mailosaur.com/api/messages/search?server=l8toypmu',
+      headers: {
+        authorization: 'Basic '+ Buffer.from('pAyC4IcQzqfZvqq').toString('base64')
+      },
+      body:{
+        sentTo: 'ja1g3tgi96k.l8toypmu@mailosaur.io'
+      }
+    })
+
 });

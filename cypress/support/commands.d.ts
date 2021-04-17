@@ -1,7 +1,7 @@
 declare namespace Cypress {
   interface Chainable<Subject> {
 
-    /*
+    /**
      * adds a new todo item
      * @example
      * cy.addTodo('todo title')
