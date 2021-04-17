@@ -3,28 +3,8 @@
     {
       "title": "buy milk",
       "completed": false,
-      "id": "0140841882"
-    },
-    {
-      "title": "wash dishes",
-      "completed": false,
-      "id": "1192799729"
-    },
-    {
-      "title": "clean windows",
-      "completed": false,
-      "id": "9143154579"
-    },
-    {
-      "title": "make bed",
-      "completed": false,
-      "id": "6689966171"
+      "id": 1
     }
   ],
-  "accounts": [
-    {
-      "email": "ja1g3tgi96k.l8toypmu@mailosaur.io",
-      "password": "admin"
-    }
-  ]
+  "accounts": []
 }

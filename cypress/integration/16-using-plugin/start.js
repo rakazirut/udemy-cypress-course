@@ -32,5 +32,9 @@ it('drags item to second position', () => {
     .get('.todo')
     .eq(1)
     .as('second');
+
+  cy
+    .get('@first')
+    .drag('@second')
   
 });

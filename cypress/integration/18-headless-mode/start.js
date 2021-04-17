@@ -24,3 +24,12 @@ it('should pass', () => {
     .should('contain.text', 'buy milk');
   
 });
+
+it('should pass', () => {
+
+  cy
+    .get('.todo')
+    .should('have.length', 2)
+    .should('contain.text', 'buy milk');
+  
+});

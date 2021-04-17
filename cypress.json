@@ -1,7 +1,8 @@
 {
-  "baseUrl": null,
+  "baseUrl": "http://localhost:3000",
   "viewportWidth": 600,
   "viewportHeight": 800,
+  "testFiles": "**/*.*",
   "$schema": "https://on.cypress.io/cypress.schema.json",
   "chromeWebSecurity":false
 }
